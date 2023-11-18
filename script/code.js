@@ -23,15 +23,13 @@ function calculateMutiplcation() {
   let secondValue = document.querySelector('input[data-secondMultiply]').value;
   let resultElement = document.querySelector('span[data-result]');
 }
-document.querySelector('button[data-calculate1]').addEventListener('click',)
+let calculateButton = document.querySelector('button[data-calculate1]');
 
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going  
+let resultElement = document.querySelector('span[data-first]');
 resultElement.textContent = result;
 document.querySelector('p').textContent = `The result is: ${result}`; 
-  {
-    alert('7 * 8');
-  }
 
 // 5.5. Create a normal function that allows us to multiply the 2 inputs together and writes the information to the FIRST span element.
 function calculateSum() {
@@ -46,3 +44,25 @@ document.querySelector('button[data-calculate1]').addEventListener('click',)
 let firstNumber = parseFloat(7);
 let secondNumber = parseFloat(8);
 let result = firstNumber * secondNumber;
+
+// Question 6:  Now you will have to return the calculation of the 2 numbers from the modulus input for eg.......4....%....2....= 0
+// 6.1 Set the first modulus input to a variable 
+document.querySelector('input[data-firstModulus]').value = '202';
+// 6.2 Set the send modulud input to a variable
+document.querySelector('input[data-secondModulus]').value = '3';
+// 6.3 Set the SECOND span to a variable(will display answer)
+function calculateDivison() {
+    let firstValue = document.querySelector('input[data-firstModulus]').value;
+  let secondValue = document.querySelector('input[data-secondModulus]').value;
+  let resultElement = document.querySelector('span[data-result]');
+}
+
+// 6.4 Set the SECOND button to a variable(to run event listener)
+let calculateButton2 = document.querySelector('button[data-calculate2]');
+// 6.5 Create a normal function to calculate the modulus of the inputs
+function calculateSum2() {
+    let result =  202 % 3;
+    console.log(result); 
+}
+// 6.6 Add an event listener to the button which will run the function you created
+document.querySelector('button[data-calculate2]').addEventListener('click', calculateSum2);
