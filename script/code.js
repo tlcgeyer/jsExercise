@@ -69,7 +69,7 @@ document.querySelector('button[data-calculate2]').addEventListener('click', calc
 
 // Question 7: 
 // 7.1 Change the text of 'Bubble Tea' to 'White Tea'
-document.getElementById("bubbleTea").textContent = "White Tea."; 
+document.getElementById("bubbleTea"). = "White Tea."; 
 // 7.2 Change the text of 'Green Tea' to 'Black tea'
 document.querySelector(".greenTea").textContent = "Black Tea";
 // 7.3 Change the text of 'Iced Tea' to 'Herbal Tea'
@@ -85,11 +85,27 @@ let parentsAge = 20 ;
 console.log(parentsAge);
 
 // Question 10 : Create an array with called coolCars and give it the following value: ['BMW','Bugatti','Ferrari','McLaren', 'Mercedes']
-​let data = [ 'BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
-console.log(data); 
+​let cars = ["BMW" , "Bugatti" , "Ferrari", "McLaren","Mercedes"];
+console.log(cars); 
 
 //Question 11 : Write the code to change the 'McLaren' value to 'Lamborghini' in the array Hint: use indexing to access different values in arrays
-data.splice (3, 0, 'Lamborghini'); 
-console.log(data);
+cars.splice (3, 0, 'Lamborghini'); 
+console.log(cars);
 
-//
+//Question 12 : Use a for loop to loop through the array, and console.log every value inside of the array.
+for ( let i = 0; i < 6; i++ ) {
+
+}
+
+// Question 13 : Reverse the array and console.log the reversed array.
+cars = ["Mercedes", "Lamborghini", "Ferrari", "Bugatti", "BMW"] ;
+console.log(cars(reverse))
+
+//Question 14 :  Write the code to remove the last item in the array(coolCars not the reversed array) and store it in a variable....which means your array of coolCars must look like : ['BMW','Bugati','Ferrari','Lamborghini]
+let coolCars = cars ; 
+cars.splice(0,4)
+console.log(cars);
+
+// Question 15 :  Now write the code to use the variable you made in no.14 and add it to the FRONT of the array. Your coolCars array should now look like:
+// [ 'Mercedes', 'BMW', 'Bugatti', 'Ferrari', 'Lamborghini']
+​
