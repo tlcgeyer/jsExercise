@@ -74,3 +74,22 @@ document.getElementById("bubbleTea").textContent = "White Tea.";
 document.querySelector(".greenTea").textContent = "Black Tea";
 // 7.3 Change the text of 'Iced Tea' to 'Herbal Tea'
 ​document.querySelector('li[data-icedTea]').textContent = "Herbal Tea";
+
+//Question : 8 
+//Declare a variable called lastName and add a value to it(value must be a string)
+let lastName = Geyer ; 
+console.log(lastName);
+
+// Question 9 :  Declare a variable called parentsAge and give it a value of 20(value must be a number)
+let parentsAge = 20 ; 
+console.log(parentsAge);
+
+// Question 10 : Create an array with called coolCars and give it the following value: ['BMW','Bugatti','Ferrari','McLaren', 'Mercedes']
+​let data = [ 'BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
+console.log(data); 
+
+//Question 11 : Write the code to change the 'McLaren' value to 'Lamborghini' in the array Hint: use indexing to access different values in arrays
+data.splice (3, 0, 'Lamborghini'); 
+console.log(data);
+
+//
