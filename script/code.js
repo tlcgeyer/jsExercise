@@ -66,3 +66,11 @@ function calculateSum2() {
 }
 // 6.6 Add an event listener to the button which will run the function you created
 document.querySelector('button[data-calculate2]').addEventListener('click', calculateSum2);
+
+// Question 7: 
+// 7.1 Change the text of 'Bubble Tea' to 'White Tea'
+document.getElementById("bubbleTea").textContent = "White Tea."; 
+// 7.2 Change the text of 'Green Tea' to 'Black tea'
+document.querySelector(".greenTea").textContent = "Black Tea";
+// 7.3 Change the text of 'Iced Tea' to 'Herbal Tea'
+​document.querySelector('li[data-icedTea]').textContent = "Herbal Tea";
